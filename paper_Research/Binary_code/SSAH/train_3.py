@@ -378,9 +378,9 @@ if __name__ == "__main__":
     cost7 = tf.losses.mean_squared_error(net1, net2)
 
     # -------------------------
-
-    cost = cost1 + cost3+cost5+cost6-cost7*10 +cost4
-    # cost=cost1+cost2+cost3+cost4
+    cost = cost1 + cost3 + cost5 + cost6 +10./cost7+ cost4
+    # cost = cost1 + cost3+cost5+cost6-cost7*10 +cost4
+    # cost=cost1+cost2+cost3+cost4 
 
     optimizer = tf.train.AdamOptimizer(learning_rate=lr).minimize(cost)
 
