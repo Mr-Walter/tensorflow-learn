@@ -89,7 +89,6 @@ for path in flod_paths:
     # i=0
     # img_paths=glob.glob(os.path.join(path,'*'))
 
-    j = 0
     # while True:
     img_paths = os.listdir(path)
     img_len = len(img_paths)
@@ -110,8 +109,8 @@ for path in flod_paths:
         # img=pre_process_image(skimage.io.imread(os.path.join(path,img_path)),training)
         # img=preprocess_for_train(skimage.io.imread(os.path.join(path,img_path)))
     imgs=tf.convert_to_tensor(imgs,dtype=tf.uint8).eval()
-    [skimage.io.imsave(os.path.join(path,str(j)+'_'+str(k)+'.jpg',),imgs[k]) for k in range(img_len)]
-    j+=1
+    [skimage.io.imsave(os.path.join(path,'_'+str(k)+'.jpg',),imgs[k]) for k in range(len(imgs))]
+
 
 sess.close()
 
