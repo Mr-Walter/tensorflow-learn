@@ -1,6 +1,8 @@
 import numpy as np
 
-'''结构数组'''
+'''结构数组,
+参考：https://blog.csdn.net/kezunhai/article/details/46051999
+'''
 # 'S1' 表示字符串 1个长度， 'S5' 5个长度
 persontype=np.dtype({'names':['name','age','weight'], 'formats':['S5',np.uint8, np.float32]},align=True)
 arr = np.array([("Zhang",32,90),("Wang",23,92)],dtype = persontype)
