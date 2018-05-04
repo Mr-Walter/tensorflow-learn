@@ -570,3 +570,4 @@ print('%f' % ((t1-t0)/N))    # 0.000003
 print('%f' % ((t2-t1)/N))    # 0.000508
 ```
  [Numpy Vs Pandas Performance Comparison](http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html)
+
