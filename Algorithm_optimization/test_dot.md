@@ -6,10 +6,10 @@
 ----
 
 
-> 结论：cpu上，float32>float64>int32>其它类型
+> 结论：cpu上numpy运算效率，float32>float64>int32>其它类型
 
+> 数据存取速度：int8=uint8>int16>float16>int32>float32>int64>float64
  
-
 ----
 
 
