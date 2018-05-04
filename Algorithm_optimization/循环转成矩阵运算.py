@@ -8,7 +8,7 @@ import time
 # start_time=datetime.datetime.now()
 start_time=time.clock()
 
-with open("./int8_explor_17_crop_all_features.pkl","rb") as fp:
+with open("./xxxx.pkl","rb") as fp:
     data=pickle.load(fp,encoding="iso8859-1") # pickle3 打开pickle2
 
 img_path=list(data.keys()) # 567297
