@@ -38,6 +38,7 @@ Zeiler和Fergus [32]分析了CNN的深度，发现浅层学习局部视觉描述
 ## 文章流程图：
 ![这里写图片描述](http://img.blog.csdn.net/20180419194246855?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2M3ODE3MDgyNDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
+
 分析：
 
 - 1、先用ImageNet 做一个分类模型
